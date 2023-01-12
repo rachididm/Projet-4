@@ -4,7 +4,7 @@
 body {
     max-width: 375px;
     margin: 0;
-    font-family: 'roboto', sans-serif;
+    font-family: 'roboto', 'shrikhand' , sans-serif;
 }
 
 .header {
@@ -13,6 +13,7 @@ body {
     img {
         width: 43%;
         height: 44px;
+        font-family: 'shrikhand' , 'roboto';
     }
     &__img {
         width: 100%;
@@ -32,7 +33,7 @@ body {
 }
 
 .article {
-    background-color: $color-primary;
+    background-color: $color-grey;
     width: 100%;
     @include flexColCenter;
     text-align: center;
@@ -66,7 +67,7 @@ body {
         margin-left: 20px;
     }
     &__form {
-        background-color: $color-primary;
+        background-color: $color-grey;
         border-radius: 20px;
         width: 85%;
         height: 72.38px;
@@ -92,7 +93,7 @@ body {
 .card {
     width: 100%;
     height: auto;
-    background-color: $color-primary;
+    background-color: $color-grey;
     margin-top: 68px;
     display: flex;
     flex-direction: column;
