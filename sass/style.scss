@@ -52,12 +52,20 @@ body {
         width: 58.13%;
         height: 50px;
         border-radius: 25px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
         font-size: $size-primary;
         font-weight: 500;
         color: $color-white;
         margin-bottom: 57px;
-        
+        transform: scale(1);
+        &:active {
+        color: #9356dc;
+        background: #ffff;
+        }   
+        &:hover {
+            background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+        }
     }
 }
 .fonction {
@@ -78,9 +86,23 @@ body {
         margin-left: 32.51px;
         text-decoration: none;
         color: $color-black;
+        position: relative;
         &:hover {
             background-color: #f5edff;
-        }
+            .fonction__icon {
+                color: $color-primary;
+            }
+        } 
+    }
+    &__number {
+        position: absolute;
+        left: -7px;
+        border: 1px solid $color-primary;
+        border-radius: 50%;
+        background-color: $color-primary;
+        color: $color-white;
+        font-size: 14px;
+        padding: 2px 6px;
     }
     &__icon {
         margin-right: 27px;
@@ -91,57 +113,71 @@ body {
 }
 
 .card {
-    width: 100%;
-    height: auto;
     background-color: $color-grey;
     margin-top: 68px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding: 20px;
     h2 {
-        padding-top: 54px;
-        padding-right: 170px;
+        padding: 35px 0 20px 0;
     }
     &__form {
         display: flex;
         flex-direction: column;
-        width: 89%;
+        width: 100%;
         height: 251px;
-        border: 5px solid #ffffff ;
         border-radius: 15px;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-        text-decoration: none;
-        color: $color-black;
         margin-bottom: 18px;
         background-color: $color-white;
+        position: relative;
+    }
+    &__text {
+        position: absolute;
+        background-color: #99E2D0;
+        width: 80px;
+        height: 29px;
+        border-radius: 2px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     }
     &__img {
+        position: relative;
         width: 100%;
-        height: 200px;
+        height: 180px;
         object-fit: cover;  
-        border-radius: 15px; 
+        border-radius: 15px 15px 0 0; 
     }
-    &__title {
-        margin: 0;
+    &__decoration {
+        text-decoration: none;
+    }
+    &__alignIcon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
     }
     &__align {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: flex-start;
+        text-decoration: none;
+        color: $color-black;
+        row-gap: 5px;
+    }
+    &__title {
+        margin: 0;
     }
     &__para {
         margin: 0;
     }
-    &__alignIcon {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding-top: 10px;
-        padding-bottom: 20px;
-    }
     &__icon {
         font-size: 22px;
+        transition: background-color 400ms;
+        padding-right: 20px;
+        &:active {
+            background-color: $color-primary;
+        }
     }
 }
 .footer {
