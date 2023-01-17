@@ -1,9 +1,11 @@
+/*Genral*/
 body {
   max-width: 375px;
   margin: 0;
   font-family: "roboto", "shrikhand", sans-serif;
 }
 
+/*Header Page d'accueil*/
 .header {
   height: 113px;
   display: flex;
@@ -22,6 +24,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 30px;
 }
 .header__loc {
   width: 100%;
@@ -35,6 +38,13 @@ body {
   margin-right: 13px;
 }
 
+#localisation {
+  font-size: 16px;
+  border: none;
+  background-color: #EAEAEA;
+}
+
+/*Article Page d'accueil*/
 .article {
   background-color: #F7F7F7;
   width: 100%;
@@ -58,13 +68,16 @@ body {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   width: 58.13%;
   height: 50px;
+  border: none;
   border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   font-weight: 500;
   color: white;
   margin-bottom: 57px;
-  transform: scale(1);
+  cursor: pointer;
+  transition: 0.3s;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .article__button:active {
   color: #9356dc;
@@ -73,8 +86,10 @@ body {
 .article__button:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  transition: 0.3s;
 }
 
+/*Fionctionnement Page d'accueil*/
 .fonction {
   width: 100%;
 }
@@ -85,6 +100,7 @@ body {
 .fonction__form {
   background-color: #F7F7F7;
   border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   width: 85%;
   height: 72.38px;
   display: flex;
@@ -121,6 +137,7 @@ body {
   padding-right: 20px;
 }
 
+/*Card Page d'accueil*/
 .card {
   background-color: #F7F7F7;
   margin-top: 68px;
@@ -144,11 +161,18 @@ body {
 }
 .card__text {
   position: absolute;
+  right: 10px;
   background-color: #99E2D0;
   width: 80px;
   height: 29px;
   border-radius: 2px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  color: #008766;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card__img {
   position: relative;
@@ -172,7 +196,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  text-decoration: none;
   color: black;
   row-gap: 5px;
 }
@@ -182,20 +205,32 @@ body {
 .card__para {
   margin: 0;
 }
+.card .fa-regular {
+  font-size: 22px;
+  position: absolute;
+}
+.card .fa-regular:hover {
+  opacity: 0;
+}
 .card__icon {
   font-size: 22px;
-  transition: background-color 400ms;
-  padding-right: 20px;
+  padding-right: 11px;
+  position: relative;
+  opacity: 0;
+  color: #9356DC;
 }
-.card__icon:active {
-  background-color: #9356DC;
+.card__icon:hover {
+  opacity: 1;
 }
 
+/*Footer Page d'accueil*/
 .footer {
   padding-left: 25px;
   background-color: black;
   margin: 0;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 .footer__title {
   padding-top: 22px;
@@ -208,6 +243,99 @@ body {
   padding-right: 11px;
   padding-left: 8px;
 }
-.footer p {
+.footer a {
   margin: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+/*Header Menu*/
+.header1 {
+  height: 338px;
+  position: relative;
+}
+.header1__element {
+  height: 63px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header1__icon {
+  color: #353535;
+}
+.header1__logo {
+  width: 43.2%;
+  height: 44px;
+  margin-right: 65px;
+}
+.header1__img {
+  width: 100%;
+  height: 275px;
+}
+
+.card1 {
+  height: auto;
+  background: #F7F7F7;
+  border-radius: 40px 40px 0px 0px;
+  position: relative;
+  top: -60px;
+  display: flex;
+  flex-direction: column;
+}
+.card1__title {
+  padding-top: 32px;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "shrikhand";
+  color: #101010;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.card1__contener {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.card1__contener--border {
+  margin-left: 13px;
+  width: 70px;
+  border-bottom: 3px solid #99E2D0;
+}
+.card1__menu {
+  background-color: white;
+  width: 93%;
+  height: 68px;
+  margin-bottom: 13px;
+  padding-top: 11px;
+  padding-left: 11px;
+  padding-right: 11px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+}
+.card1__menu--title {
+  margin: 0;
+  font-size: 18px;
+}
+.card1__details {
+  display: flex;
+  justify-content: space-between;
+}
+.card1__details--para {
+  font-weight: 300;
+  font-size: 15px;
+}
+.card1__button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.footer1 {
+  position: relative;
+  top: -80px;
 }/*# sourceMappingURL=style.css.map */

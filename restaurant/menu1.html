@@ -4,113 +4,117 @@
 <head>
     <meta charset="utf-8" >
     <title>OhMyfood</title>
-    <link href="" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="../sass/style.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/084709303a.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
-    <header>
-        <div>
-            <i class="fa-solid fa-arrow-left" href="../index.html"></i>
-            <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+    <header class="header1">
+        <div class="header1__element">
+            <a href="../index.html"><i class="fa-solid fa-arrow-left header1__icon"></i></a>
+            <img class="header1__logo" src="../images/logo/ohmyfood.png" alt="Logo Ohmyfood">
         </div>
-        <img src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+        <img class="header1__img" src="../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image contenant l'interieur du restaurant">
         
     </header>
     <main>
-        <section>
-            <div>
+        <section class="card1">
+                <div class="card1__title">
                 <h1>La palette du goût</h1>
                 <i class="fa-regular fa-heart"></i>
-            </div>
-            <h2>ENTREES</h2>
-            <button>
-                <h3>Fricassée d'escargots</h3>
-                <div>
-                    <p>Au piment d'espelette</p>
+                </div>
+            <div class="card1__contener">
+            <h2 class="card1__contener--border">ENTREES</h2>
+            <div class="card1__menu">
+                <h3 class="card1__menu--title">Fricassée d'escargots</h3>
+                <div class="card1__details">
+                    <p class="card1__details--para">Au piment d'espelette</p>
                     <p>25€</p>
                 </div>
-            </button>
-            <button>
-                <h3>Foie gras de canard mi-cuit</h3>
-                <div>
-                    <p>Et ses copeaux de truffe noire</p>
-                    <p>35€</p>
+            </div>
+                <div class="card1__menu">
+                    <h3 class="card1__menu--title">Foie gras de canard mi-cuit</h3>
+                    <div class="card1__details">
+                        <p class="card1__details--para">Et ses copeaux de truffe noire</p>
+                        <p>35€</p>
+                    </div>
                 </div>
-            </button>
-            <button>
-                <h3>Oeuf au platmi-cuit</h3>
-                <div>
-                    <p>Assaisonné à la truffe sur lit de caviar</p>
-                    <p>20€</p>
+                <div class="card1__menu">
+                    <h3 class="card1__menu--title">Oeuf au platmi-cuit</h3>
+                    <div class="card1__details">
+                        <p class="card1__details--para">Assaisonné à la truffe sur lit de caviar</p>
+                        <p>20€</p>
+                    </div>
                 </div>
-            </button>
-            <h2>PLATS</h2>
-            <button>
-                <h3>Filet de bœuf aux herbes</h3>
-                <div>
-                    <p>Accompagné de sa ribambelle de légumes</p>
-                    <p>40€</p>
                 </div>
-            </button>
-            <button>
-                <h3>Parmentier de queue de bœuf</h3>
-                <div>
-                    <p>À la truffe noire sur sa purée de panais</p>
-                    <p>35€</p>
+            <div class="card1__contener">
+                <h2 class="card1__contener--border">PLATS</h2>
+                <div class="card1__menu">
+                    <h3 class="card1__menu--title">Filet de bœuf aux herbes</h3>
+                    <div class="card1__details">
+                        <p class="card1__details--para">Accompagné de sa ribambelle de légumes</p>
+                        <p>40€</p>
+                    </div>
                 </div>
-            </button>
-            <button>
-                <h3>Filet de turbot</h3>
-                <div>
-                    <p>Aux agrumes</p>
-                    <p>44€</p>
+                <div class="card1__menu">
+                    <h3 class="card1__menu--title">Parmentier de queue de bœuf</h3>
+                    <div class="card1__details">
+                        <p class="card1__details--para">À la truffe noire sur sa purée de panais</p>
+                        <p>35€</p>
+                    </div>
                 </div>
-            </button>
-            <h2>DESSERTS</h2>
-            <button>
-                <h3>Paris-Brest</h3>
-                <div>
-                    <p>Revisité</p>
-                    <p>18€</p>
+                <div class="card1__menu">
+                    <h3 class="card1__menu--title">Filet de turbot</h3>
+                    <div class="card1__details">
+                        <p class="card1__details--para">Aux agrumes</p>
+                        <p>44€</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="card1__contener">
+                <h2 class="card1__contener--border">DESSERTS</h2>
+                <div class="card1__menu">
+                    <h3 class="card1__menu--title">Paris-Brest</h3>
+                    <div class="card1__details">
+                        <p class="card1__details--para">Revisité</p>
+                        <p>18€</p>
+                    </div>
                 </div>
-            </button>
-            <button>
-                <h3>Macaron au chocolat d'exception </h3>
-                <div>
-                    <p>Et glace à la vanille de Madagascar</p>
-                    <p>22€</p>
+                <div class="card1__menu">
+                    <h3 class="card1__menu--title">Macaron au chocolat d'exception</h3>
+                    <div class="card1__details">
+                        <p class="card1__details--para">Et glace à la vanille de Madagascar</p>
+                        <p>22€</p>
+                    </div>
                 </div>
-            </button>
-            <button>
-                <h3>Mousse au chocolat </h3>
-                <div>
-                    <p>Au piment d'Espelette et à la truffe noire</p>
-                    <p>23€€</p>
-                </div>
-            </button>
-
-            <button>Commander</button>
-
+                <div class="card1__menu">
+                    <h3 class="card1__menu--title">Mousse au chocolat</h3>
+                    <div class="card1__details">
+                        <p class="card1__details--para">Au piment d'Espelette et à la truffe noire</p>
+                        <p>23€</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="card1__button">
+            <button class="article__button">Commander</button>
+            </div>
         </section>
     </main>
-    <footer>
-        <div>
-         <h3>ohmyfood</h3>
-           <div>
-            <i class="fa-solid fa-utensils"></i>
-            <p>Proposer un restaurant</p>
-           </div>
-           <div>
-            <i class="fa-regular fa-handshake"></i>
-            <p>Devenir partenaire</p>
-           </div>
-            <p>Mention légales</p>
-            <p>Contact</p>
-           </div>
-    </footer>
+    <footer class="footer footer1">
+        <h3 class="footer__title">ohmyfood</h3>
+          <div class="footer__icontext">
+           <i class="fa-solid fa-utensils footer__icon"></i>
+           <a href="#">Proposer un restaurant</a>
+          </div>
+          <div class="footer__icontext">
+           <i class="fa-regular fa-handshake footer__icon"></i>
+           <a href="#">Devenir partenaire</a>
+          </div>
+           <a href="#">Mention légales</a>
+           <a href="mailto:rachid.idmmays@gmail.com">Contact</a>
+   </footer>
 
 </body>
 </html>
