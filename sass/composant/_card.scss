@@ -1,0 +1,73 @@
+/*Card page d'accueil */
+
+.card {
+    @include flexColumn;
+    width: 100%;
+   height: 251px;
+   border-radius: 15px;
+   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+   margin-bottom: 18px;
+   background-color: $color-white;
+   position: relative;
+   &__text {
+       position: absolute;
+       right: 10px;
+       background-color: $color-tertiary;
+       width: 80px;
+       height: 29px;
+       border-radius: 2px;
+       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+       z-index: 1;
+       color: #008766;
+       font-size: $size-litle;
+       @include flexCenter;
+   }
+   &__img {
+       position: relative;
+       width: 100%;
+       height: 180px;
+       object-fit: cover;  
+       border-radius: 15px 15px 0 0; 
+   }
+   &__decoration {
+       text-decoration: none;
+   }
+   &__alignIcon {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 10px 10px;
+   }
+   &__align {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       align-items: flex-start;
+       color: $color-black;
+       row-gap: 5px;
+   }
+   &__title {
+       margin: 0;
+   }
+   &__para {
+       margin: 0;
+   }
+   .fa-regular {
+       font-size: $size-tertiary;
+       position: absolute;
+       &:hover {
+           opacity: 0;
+       }
+   }
+   &__icon {
+       font-size: $size-tertiary;
+       padding-right: 11px;
+       position: relative;
+       opacity: 0;
+       color: $color-primary;
+       &:hover {
+           opacity: 1;
+       }
+   }
+   
+}

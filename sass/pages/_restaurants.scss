@@ -1,0 +1,11 @@
+/*Restaurants Page d'accueil*/
+
+.restaurants {
+    background-color: $color-grey;
+    margin-top: 68px;
+    @include flexColumn;
+    padding: 20px;
+    &__title {
+        padding: 35px 0 20px 0;
+    }
+}

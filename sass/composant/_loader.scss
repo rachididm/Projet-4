@@ -1,0 +1,57 @@
+/*LOADER*/
+
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include flexCenter;
+    font-size: 50px;
+    background-color: #ffffff;
+    height: 100%;
+    z-index: 2;
+    opacity: 0.9;
+    animation: disappear 200ms $animation-duration forwards;
+    transform-origin: top;
+    &__icon {
+        color: $color-tertiary;
+        margin-right: 20px;
+        animation: spin $animation-duration/3 linear infinite;
+    }
+    &__para {
+        font-size: 50px;
+        color: $color-primary;
+        animation: opac $animation-duration linear;
+    }
+
+}
+
+@keyframes disappear {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes opac {
+    from{
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+    
+}

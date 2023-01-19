@@ -1,0 +1,34 @@
+/*Header Page d'accueil*/
+
+.header {
+    height: 113px;
+    @include flexColCenter;
+    img {
+        width: 43%;
+        height: 44px;
+        font-family: 'shrikhand' , 'roboto';
+    }
+    &__img {
+        width: 100%;
+        height: 63px;
+        @include flexCenter;
+        padding-right: 30px;
+    }
+    
+   &__loc {
+    width: 100%;
+    height: 50px;
+    background-color: #EAEAEA;
+    @include flexCenter;
+    &--icon {
+        margin-right: 13px;
+    }
+
+   } 
+}
+
+#localisation {
+    font-size: $size-primary;
+    border: none;
+    background-color: #EAEAEA;
+}

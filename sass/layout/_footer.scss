@@ -1,0 +1,27 @@
+/*Footer Page d'accueil*/
+
+.footer {
+    padding-left: 25px;
+    background-color: $color-black;
+    margin: 0;
+    color: $color-white;
+    @include flexColumn ;
+    &__title {
+        padding-top: 22px;
+    }
+    &__icontext {
+        display: flex;
+        align-items: center;
+    }
+    &__icon {
+        padding-right: 11px;
+        padding-left: 8px;
+
+    }
+    a {
+        margin: 5px;
+        text-decoration: none;
+        color: $color-white;
+
+    }
+}

@@ -44,7 +44,7 @@ body {
   background-color: #EAEAEA;
 }
 
-/*Article Page d'accueil*/
+/*Presentation Page d'accueil*/
 .article {
   background-color: #F7F7F7;
   width: 100%;
@@ -64,7 +64,8 @@ body {
   font-weight: 300;
   margin-bottom: 27px;
 }
-.article__button {
+
+.btn {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   width: 58.13%;
   height: 50px;
@@ -77,13 +78,12 @@ body {
   margin-bottom: 57px;
   cursor: pointer;
   transition: 0.3s;
-  transform: matrix(1, 0, 0, 1, 0, 0);
 }
-.article__button:active {
+.btn:active {
   color: #9356dc;
   background: white;
 }
-.article__button:hover {
+.btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
   transition: 0.3s;
@@ -137,18 +137,20 @@ body {
   padding-right: 20px;
 }
 
-/*Card Page d'accueil*/
-.card {
+/*Restaurants Page d'accueil*/
+.restaurants {
   background-color: #F7F7F7;
   margin-top: 68px;
   display: flex;
   flex-direction: column;
   padding: 20px;
 }
-.card h2 {
+.restaurants__title {
   padding: 35px 0 20px 0;
 }
-.card__form {
+
+/*Card page d'accueil */
+.card {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -249,7 +251,6 @@ body {
   color: white;
 }
 
-/*Header Menu*/
 .header1 {
   height: 338px;
   position: relative;
@@ -285,7 +286,7 @@ body {
 }
 .card1__title {
   padding-top: 32px;
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 400;
   font-family: "shrikhand";
   color: #101010;
@@ -302,6 +303,7 @@ body {
   margin-left: 13px;
   width: 70px;
   border-bottom: 3px solid #99E2D0;
+  font-weight: 300;
 }
 .card1__menu {
   background-color: white;
@@ -317,6 +319,7 @@ body {
 .card1__menu--title {
   margin: 0;
   font-size: 18px;
+  font-weight: 500;
 }
 .card1__details {
   display: flex;
@@ -324,7 +327,7 @@ body {
 }
 .card1__details--para {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
 }
 .card1__button {
   display: flex;
@@ -368,6 +371,8 @@ body {
 .loader__para {
   font-size: 50px;
   color: #9356DC;
+  -webkit-animation: opac 3s linear;
+          animation: opac 3s linear;
 }
 
 @-webkit-keyframes disappear {
@@ -401,5 +406,21 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */

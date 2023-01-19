@@ -1,0 +1,19 @@
+/*Presentation Page d'accueil*/
+
+.article {
+    background-color: $color-grey;
+    width: 100%;
+    @include flexColCenter;
+    text-align: center;
+    &__title {
+        margin: 0;
+        padding-top: 39px;
+        width: 73.33%;
+    }
+    &__para {
+        font-size: $size-secondary;
+        font-weight: 300;
+        margin-bottom: 27px;
+    }
+}
+
