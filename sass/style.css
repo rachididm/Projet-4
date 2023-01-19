@@ -1,6 +1,5 @@
 /*Genral*/
 body {
-  max-width: 375px;
   margin: 0;
   font-family: "roboto", "shrikhand", sans-serif;
 }
@@ -294,6 +293,24 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.card1 .fa-regular {
+  font-size: 22px;
+  position: absolute;
+  padding-top: 4px;
+}
+.card1 .fa-regular:hover {
+  opacity: 0;
+}
+.card1__icon {
+  font-size: 22px;
+  padding-right: 11px;
+  position: relative;
+  opacity: 0;
+  color: #9356DC;
+}
+.card1__icon:hover {
+  opacity: 1;
+}
 .card1__contener {
   display: flex;
   flex-direction: column;
@@ -301,7 +318,7 @@ body {
 }
 .card1__contener--border {
   margin-left: 13px;
-  width: 70px;
+  width: 60px;
   border-bottom: 3px solid #99E2D0;
   font-weight: 300;
 }
@@ -417,8 +434,12 @@ body {
           animation: disappear 200ms 3s forwards;
   transform-origin: top;
 }
-.loader__icon {
-  color: #99E2D0;
+.loader__border {
+  width: 50px;
+  height: 50px;
+  border-top: 10px solid #9356DC;
+  border-bottom: 10px solid #99E2D0;
+  border-radius: 50%;
   margin-right: 20px;
   -webkit-animation: spin 1s linear infinite;
           animation: spin 1s linear infinite;

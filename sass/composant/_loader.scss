@@ -14,8 +14,12 @@
     opacity: 0.9;
     animation: disappear 200ms $animation-duration forwards;
     transform-origin: top;
-    &__icon {
-        color: $color-tertiary;
+    &__border {
+        width: 50px;
+        height: 50px;
+        border-top: 10px solid $color-primary;
+        border-bottom: 10px solid $color-tertiary;
+        border-radius: 50%;
         margin-right: 20px;
         animation: spin $animation-duration/3 linear infinite;
     }

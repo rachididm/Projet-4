@@ -35,12 +35,30 @@
         color: #101010;
         @include flexAroundCenter
     }
+    .fa-regular {
+        font-size: $size-tertiary;
+        position: absolute;
+        padding-top: 4px;
+        &:hover {
+            opacity: 0;
+        }
+    }
+    &__icon {
+        font-size: $size-tertiary;
+        padding-right: 11px;
+        position: relative;
+        opacity: 0;
+        color: $color-primary;
+        &:hover {
+            opacity: 1;
+        }
+    }
     &__contener {
         @include flexColumn;
         font-size:$size-primary;
         &--border {
             margin-left: 13px;
-            width: 70px;
+            width: 60px;
             border-bottom: 3px solid #99E2D0;
             font-weight: 300;
         }
