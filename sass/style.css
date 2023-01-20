@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 .header img {
-  width: 43%;
+  width: 162px;
   height: 44px;
   font-family: "shrikhand", "roboto";
 }
@@ -66,7 +66,7 @@ body {
 
 .btn {
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  width: 58.13%;
+  width: 218px;
   height: 50px;
   border: none;
   border-radius: 25px;
@@ -251,23 +251,26 @@ body {
 }
 
 .header1 {
+  width: 100%;
   height: 338px;
   position: relative;
 }
 .header1__element {
   height: 63px;
-  width: 100%;
+  width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 .header1__icon {
   color: #353535;
+  margin-left: 23px;
+  margin-right: 63px;
 }
 .header1__logo {
-  width: 43.2%;
+  width: 162px;
   height: 44px;
-  margin-right: 65px;
+  margin-right: 35px;
 }
 .header1__img {
   width: 100%;
@@ -275,6 +278,7 @@ body {
 }
 
 .card1 {
+  width: 100%;
   height: auto;
   background: #F7F7F7;
   border-radius: 40px 40px 0px 0px;
@@ -498,5 +502,59 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+@media screen and (min-width: 784px) {
+  .header__img {
+    width: 200px;
+  }
+  .fonction__contener {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .fonction__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .fonction__icon {
+    margin-right: 23px;
+    margin-left: 23px;
+  }
+  .restaurants__title {
+    padding-left: 48px;
+  }
+  .contener__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 40%;
+  }
+  .footer__title {
+    padding-top: 0;
+  }
+  .footer__contener {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer__contener1 {
+    display: flex;
+    justify-content: center;
+  }
+  .header1__icon {
+    margin-right: 150px;
+  }
+  .header1__logo {
+    width: 200px;
+  }
+  .card1 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }/*# sourceMappingURL=style.css.map */
