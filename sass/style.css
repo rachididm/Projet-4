@@ -1,5 +1,6 @@
 /*Genral*/
 body {
+  max-width: 1440px;
   margin: 0;
   font-family: "roboto", "shrikhand", sans-serif;
 }
@@ -13,17 +14,16 @@ body {
   align-items: center;
 }
 .header img {
-  width: 162px;
+  width: 100%;
   height: 44px;
   font-family: "shrikhand", "roboto";
 }
 .header__img {
-  width: 100%;
+  width: 162px;
   height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 30px;
 }
 .header__loc {
   width: 100%;
@@ -79,8 +79,8 @@ body {
   transition: 0.3s;
 }
 .btn:active {
-  color: #9356dc;
-  background: white;
+  color: #9356dc !important;
+  background: white !important;
 }
 .btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -227,7 +227,7 @@ body {
 /*Footer Page d'accueil*/
 .footer {
   padding-left: 25px;
-  background-color: black;
+  background-color: #353535;
   margin: 0;
   color: white;
   display: flex;
@@ -245,7 +245,8 @@ body {
   padding-left: 8px;
 }
 .footer a {
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   text-decoration: none;
   color: white;
 }
@@ -257,7 +258,7 @@ body {
 }
 .header1__element {
   height: 63px;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -265,16 +266,22 @@ body {
 .header1__icon {
   color: #353535;
   margin-left: 23px;
-  margin-right: 63px;
+}
+.header1__contener {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header1__logo {
   width: 162px;
   height: 44px;
-  margin-right: 35px;
 }
 .header1__img {
   width: 100%;
   height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card1 {
@@ -283,7 +290,7 @@ body {
   background: #F7F7F7;
   border-radius: 40px 40px 0px 0px;
   position: relative;
-  top: -60px;
+  margin-top: -60px;
   display: flex;
   flex-direction: column;
 }
@@ -352,7 +359,6 @@ body {
 }
 .card1__button {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -361,7 +367,7 @@ body {
 
 .footer1 {
   position: relative;
-  top: -80px;
+  bottom: 0;
 }
 
 .entrees__title {
@@ -533,28 +539,91 @@ body {
   .card {
     width: 40%;
   }
+  .footer {
+    height: 114px;
+  }
   .footer__title {
     padding-top: 0;
+    margin-left: 100px;
+    margin-right: 100px;
   }
   .footer__contener {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    height: 114px;
   }
   .footer__contener1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
-  .header1__icon {
-    margin-right: 150px;
-  }
-  .header1__logo {
+  .footer__logo {
     width: 200px;
   }
   .card1 {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+  }
+}
+/*Responsives Pages d'accueil*/
+@media screen and (min-width: 1200px) {
+  .article__title {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .fonction__title {
+    margin-left: 193px;
+  }
+  .fonction__contener {
+    margin-left: 173px;
+    margin-right: 172px;
+  }
+  .restaurants__title {
+    margin-left: 130px;
+  }
+  .contener__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 173px;
+    margin-right: 170px;
+  }
+  .card {
+    width: 24%;
+  }
+  .card__alignIcon {
+    font-size: 14px;
+  }
+  .footer__contener1 {
+    gap: 40px;
+  }
+  /*Responsives des pages des menu */
+  .card1__title {
+    justify-content: center;
+  }
+  .card1__title h1 {
+    margin-right: 24px;
+  }
+  .card1__contener {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1__contener--border {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  .card1__bloc {
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .card1__menu {
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 
 .footer {
     padding-left: 25px;
-    background-color: $color-black;
+    background-color: #353535;
     margin: 0;
     color: $color-white;
     @include flexColumn ;
@@ -19,7 +19,8 @@
 
     }
     a {
-        margin: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         text-decoration: none;
         color: $color-white;
 
