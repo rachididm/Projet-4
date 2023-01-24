@@ -33,9 +33,7 @@
        text-decoration: none;
    }
    &__alignIcon {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
+       @include flexBetweenCenter;
        padding: 10px 10px;
    }
    &__align {

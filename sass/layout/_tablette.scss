@@ -6,14 +6,10 @@
     }
     .fonction {
         &__contener {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flexBetweenCenter;
         }
         &__form {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexCenter;
         }
         &__icon {
             margin-right: 23px;
@@ -53,9 +49,7 @@
         height: 114px;
     }
     &__contener1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexCenter;
         gap: 30px;
     }
 

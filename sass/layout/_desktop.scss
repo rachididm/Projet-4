@@ -4,7 +4,7 @@
     
     .article {
         &__title {
-            font-size: 40px;
+            font-size: $size-big;
             font-weight: 700;
         }
     }
@@ -43,7 +43,7 @@
 
     .footer {
         &__contener1 {
-            gap: 40px;
+            gap: $size-big;
         }
     }
 

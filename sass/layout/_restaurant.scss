@@ -90,6 +90,7 @@
     &__details {
             display: flex;
             justify-content: space-between;
+            opacity: 1;
             &--para {
                 font-weight: 300;
                 font-size: $size-primary;
@@ -99,6 +100,18 @@
         @include flexCenter;
         width: 100%;
         margin-top: 40px;
+    }
+    &__encoche {
+        opacity: 0;
+        border-radius: 0px 15px 15px 0px;
+        background: $color-tertiary;
+        transition: all 2s;
+        position: relative;
+        &:hover>.card1__menu {
+            opacity: 1;
+            width: 59px;
+
+        }
     }
     }
 
