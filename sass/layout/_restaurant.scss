@@ -83,40 +83,74 @@
         padding-right: 11px;
         box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
         border-radius: 15.0431px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        opacity: 1;
+        &:hover .card1__encoche {
+            margin-right: 60px;
+        }
         &--title {
             margin: 0;
             font-size: $size-secondary;
             font-weight: 500;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
-        
-    }
-    &__details {
-            display: flex;
-            justify-content: space-between;
-            opacity: 1;
-            &--para {
+        &--para {
                 font-weight: 300;
                 font-size: $size-primary;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
             }
+    }
+    
+            
+            
+        
+        &__block1 {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
         }
     &__button {
         @include flexCenter;
         width: 100%;
         margin-top: 40px;
     }
+    &__block2 {
+        display: flex;
+        align-items: center;
+        padding-top: 8px;
+    }
+    &__price {
+        margin-right: -60px;
+        transition: all 2s;
+    }
+
     &__encoche {
-        opacity: 0;
         border-radius: 0px 15px 15px 0px;
         background: $color-tertiary;
-        transition: all 2s;
+        transition: all 500ms;
+        width: 59px;
+        height: 79px;
         position: relative;
-        &:hover>.card1__menu {
-            opacity: 1;
-            width: 59px;
-
+        top: -10px;
+        right: -71px;
+        opacity: 1;
+        @include flexCenter;
+        
+        &--icon {
+            font-size: $size-tertiary;
+            background-color: $color-tertiary;
+            color: $color-white;
+        }
         }
     }
-    }
+    
+    
 
 
 .footer1 {

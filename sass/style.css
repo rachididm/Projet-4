@@ -349,20 +349,33 @@ body {
   padding-right: 11px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  opacity: 1;
+}
+.card1__menu:hover .card1__encoche {
+  margin-right: 60px;
 }
 .card1__menu--title {
   margin: 0;
   font-size: 18px;
   font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.card1__details {
-  display: flex;
-  justify-content: space-between;
-  opacity: 1;
-}
-.card1__details--para {
+.card1__menu--para {
   font-weight: 300;
   font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.card1__block1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .card1__button {
   display: flex;
@@ -371,16 +384,33 @@ body {
   width: 100%;
   margin-top: 40px;
 }
+.card1__block2 {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+.card1__price {
+  margin-right: -60px;
+  transition: all 2s;
+}
 .card1__encoche {
-  opacity: 0;
   border-radius: 0px 15px 15px 0px;
   background: #99E2D0;
-  transition: all 2s;
-  position: relative;
-}
-.card1__encoche:hover > .card1__menu {
-  opacity: 1;
+  transition: all 500ms;
   width: 59px;
+  height: 79px;
+  position: relative;
+  top: -10px;
+  right: -71px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card1__encoche--icon {
+  font-size: 22px;
+  background-color: #99E2D0;
+  color: white;
 }
 
 .footer1 {
