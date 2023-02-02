@@ -27,3 +27,9 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin hiddenEllipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
