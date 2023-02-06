@@ -1,7 +1,6 @@
 /*General*/
 body {
-  max-width: 1440px;
-  margin: 0;
+  margin: auto;
   font-family: "roboto", "shrikhand", sans-serif;
 }
 
@@ -403,7 +402,7 @@ body {
   width: 59px;
   height: 79px;
   position: relative;
-  top: -10px;
+  top: -9.5px;
   right: -71px;
   opacity: 1;
   display: flex;
