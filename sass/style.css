@@ -215,7 +215,7 @@ body {
 }
 .card__icon {
   font-size: 22px;
-  padding-right: 11px;
+  padding-right: 5px;
   position: relative;
   opacity: 0;
   color: transparent;
