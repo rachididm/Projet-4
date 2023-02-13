@@ -76,7 +76,6 @@ body {
   color: white;
   margin-bottom: 57px;
   cursor: pointer;
-  transition: 0.3s;
 }
 .btn:active {
   color: #9356dc !important;
@@ -85,7 +84,6 @@ body {
 .btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  transition: 0.3s;
 }
 
 /*Fionctionnement Page d'accueil*/
