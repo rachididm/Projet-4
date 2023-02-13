@@ -393,12 +393,11 @@ body {
 }
 .card1__price {
   margin-right: -60px;
-  transition: all 2s;
 }
 .card1__encoche {
   border-radius: 0px 15px 15px 0px;
   background: #99E2D0;
-  transition: all 500ms;
+  transition: 500ms;
   width: 59px;
   height: 79px;
   position: relative;
@@ -413,8 +412,6 @@ body {
   font-size: 22px;
   background-color: #99E2D0;
   color: white;
-  -webkit-animation: quarter 1s ease-in-out;
-          animation: quarter 1s ease-in-out;
 }
 
 /*Footer Pages Menu*/
@@ -425,38 +422,38 @@ body {
 
 /*Animation pour faire apparaitre les plats petit a petit*/
 .entrees__title {
-  -webkit-animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 0.5s 1 forwards;
-          animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 0.5s 1 forwards;
+  -webkit-animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 0.5s forwards;
+          animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 0.5s forwards;
   opacity: 0;
 }
 
 .entrees {
-  -webkit-animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 1s 1 forwards;
-          animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 1s 1 forwards;
+  -webkit-animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 1s forwards;
+          animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 1s forwards;
   opacity: 0;
 }
 
 .plats__title {
-  -webkit-animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 1.5s 1 forwards;
-          animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 1.5s 1 forwards;
+  -webkit-animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 1.5s forwards;
+          animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 1.5s forwards;
   opacity: 0;
 }
 
 .plats {
-  -webkit-animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 2s 1 forwards;
-          animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 2s 1 forwards;
+  -webkit-animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 2s forwards;
+          animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 2s forwards;
   opacity: 0;
 }
 
 .desserts__title {
-  -webkit-animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 2.5s 1 forwards;
-          animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 2.5s 1 forwards;
+  -webkit-animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 2.5s forwards;
+          animation: translate_menu 2000ms cubic-bezier(0.1, -0.6, 0.2, 0) 2.5s forwards;
   opacity: 0;
 }
 
 .desserts {
-  -webkit-animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 3s 1 forwards;
-          animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 3s 1 forwards;
+  -webkit-animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 3s forwards;
+          animation: translate_menu 2500ms cubic-bezier(0.1, -0.6, 0.2, 0) 3s forwards;
   opacity: 0;
 }
 
